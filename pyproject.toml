@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "civiclens"
+version = "0.1.0"
+description = "CivicLens — a lineage-tracked data platform turning Indian essential-commodity price data into a statistically-rigorous policy finding."
+readme = "policylens_README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "polars>=1.9",
+    "pandera>=0.20",
+    "duckdb>=1.1",
+    "pyarrow>=17.0",
+    "statsmodels>=0.14",
+    "scipy>=1.14",
+    "pingouin>=0.5",
+    "scikit-learn>=1.5",
+    "streamlit>=1.38",
+    "requests>=2.32",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "dvc>=3.55",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/civiclens"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+packages = ["civiclens"]
+mypy_path = "src"
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
