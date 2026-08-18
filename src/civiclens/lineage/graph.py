@@ -4,7 +4,7 @@ import re
 from civiclens.config import ROOT_DIR
 from civiclens.lineage.emit import LINEAGE_LOG_PATH
 
-README_PATH = ROOT_DIR / "policylens_README.md"
+README_PATH = ROOT_DIR / "README.md"
 SECTION_START = "<!-- LINEAGE_GRAPH_START -->"
 SECTION_END = "<!-- LINEAGE_GRAPH_END -->"
 

@@ -1,0 +1,13 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.dvc/cache
+.dvc/tmp
+data/raw
+data/interim
+brief/policy_brief.html
+tests
