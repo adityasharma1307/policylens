@@ -1,8 +1,8 @@
 import pandas as pd
 import streamlit as st
 
-from civiclens.dashboard import charts
-from civiclens.dashboard.data import (
+from policylens.dashboard import charts
+from policylens.dashboard.data import (
     filter_options,
     load_results,
     query_fact,
@@ -14,7 +14,7 @@ from civiclens.dashboard.data import (
 
 def render() -> None:
     st.set_page_config(
-        page_title="CivicLens — Essential Commodity Price Margins",
+        page_title="PolicyLens — Essential Commodity Price Margins",
         page_icon="📊",
         layout="wide",
     )
@@ -23,7 +23,7 @@ def render() -> None:
     # Empty state: pipeline hasn't been run yet.
     # -----------------------------------------------------------------------
     if not warehouse_ready() or not results_ready():
-        st.title("CivicLens")
+        st.title("PolicyLens")
         st.warning("No analysis output found yet. Run the pipeline first, then reload this page:")
         st.code("make ingest && make clean && make warehouse && make analysis", language="bash")
         st.stop()
@@ -172,7 +172,7 @@ def render() -> None:
     st.download_button(
         "Download filtered data (CSV)",
         filtered.to_csv(index=False).encode("utf-8"),
-        file_name="civiclens_filtered_prices.csv",
+        file_name="policylens_filtered_prices.csv",
         mime="text/csv",
     )
 

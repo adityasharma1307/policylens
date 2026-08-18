@@ -1,8 +1,8 @@
 import json
 import re
 
-from civiclens.config import ROOT_DIR
-from civiclens.lineage.emit import LINEAGE_LOG_PATH
+from policylens.config import ROOT_DIR
+from policylens.lineage.emit import LINEAGE_LOG_PATH
 
 README_PATH = ROOT_DIR / "README.md"
 SECTION_START = "<!-- LINEAGE_GRAPH_START -->"

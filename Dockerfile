@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     make \
     && rm -rf /var/lib/apt/lists/*
 
-ENV CIVICLENS_CHROME_BIN=/usr/bin/chromium
+ENV POLICYLENS_CHROME_BIN=/usr/bin/chromium
 
 WORKDIR /app
 

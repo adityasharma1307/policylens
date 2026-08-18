@@ -2,12 +2,12 @@ import json
 
 import pandas as pd
 
-from civiclens.config import INTERIM_DIR, PROCESSED_DIR
-from civiclens.lineage.emit import emit_job
-from civiclens.transform.clean import clean
-from civiclens.transform.normalize import normalize_price_units, pivot_to_wide
-from civiclens.transform.quality_report import build_quality_report
-from civiclens.validate.schemas import validate_clean_prices_long, validate_prices_wide
+from policylens.config import INTERIM_DIR, PROCESSED_DIR
+from policylens.lineage.emit import emit_job
+from policylens.transform.clean import clean
+from policylens.transform.normalize import normalize_price_units, pivot_to_wide
+from policylens.transform.quality_report import build_quality_report
+from policylens.validate.schemas import validate_clean_prices_long, validate_prices_wide
 
 
 def _dtype_map(df: pd.DataFrame) -> dict[str, str]:

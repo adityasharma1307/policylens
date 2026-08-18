@@ -2,8 +2,8 @@ import zipfile
 
 import pytest
 
-from civiclens.ingest.loaders import load_source, sha256_of_file
-from civiclens.ingest.sources import Source
+from policylens.ingest.loaders import load_source, sha256_of_file
+from policylens.ingest.sources import Source
 
 
 @pytest.fixture

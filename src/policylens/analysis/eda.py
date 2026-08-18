@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from civiclens.report.figures import save_figure
+from policylens.report.figures import save_figure
 
 
 def summary_by_state(df: pd.DataFrame) -> pd.DataFrame:

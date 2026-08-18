@@ -1,4 +1,4 @@
-# CivicLens
+# PolicyLens
 
 ![CI](https://github.com/adityasharma1307/policylens/actions/workflows/ci.yml/badge.svg)
 
@@ -57,7 +57,7 @@ paid, not free). Once `data/raw/` is populated:
 pip install -e ".[dev]"
 make ingest      # -> data/interim/raw_prices.parquet
 make clean       # -> data/processed/prices_wide.parquet
-make warehouse   # -> data/processed/civiclens.duckdb
+make warehouse   # -> data/processed/policylens.duckdb
 make analysis    # -> reports/results.json, reports/figures/
 make brief       # -> brief/policy_brief.pdf
 make dashboard   # -> Streamlit app at localhost:8501
@@ -72,14 +72,14 @@ redistributed — see `scripts/generate_sample_data.py`.
 
 ```
 data/raw/ (17 purchased datasets, DVC-tracked)
-  -> civiclens.ingest      typed sources, provenance hashing, pandera schema
-  -> civiclens.transform   dedup, unit normalization, missing/outlier flagging
-  -> civiclens.warehouse   DuckDB star schema (dim_state, dim_commodity, dim_date, fact_price)
-  -> civiclens.lineage     real OpenLineage events -> auto-generated graph (above)
-  -> civiclens.analysis    EDA, assumption checks, Kruskal-Wallis + BH correction,
+  -> policylens.ingest      typed sources, provenance hashing, pandera schema
+  -> policylens.transform   dedup, unit normalization, missing/outlier flagging
+  -> policylens.warehouse   DuckDB star schema (dim_state, dim_commodity, dim_date, fact_price)
+  -> policylens.lineage     real OpenLineage events -> auto-generated graph (above)
+  -> policylens.analysis    EDA, assumption checks, Kruskal-Wallis + BH correction,
                            confounder-adjusted OLS, power analysis, bootstrap robustness
-  -> civiclens.report      policy brief (markdown -> HTML -> PDF)
-  -> dashboard/            Streamlit app (civiclens.dashboard)
+  -> policylens.report      policy brief (markdown -> HTML -> PDF)
+  -> dashboard/            Streamlit app (policylens.dashboard)
 ```
 
 Every stage is a seeded, tested Python module (68 tests) with its own pandera

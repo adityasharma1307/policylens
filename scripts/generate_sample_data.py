@@ -15,7 +15,7 @@ import io
 import zipfile
 from pathlib import Path
 
-from civiclens.ingest.sources import SOURCES
+from policylens.ingest.sources import SOURCES
 
 STATES = ["Delhi", "Kerala", "Punjab", "Maharashtra", "Assam"]
 DATES = ["01-01-2020", "15-01-2020", "01-02-2020", "15-02-2020"]

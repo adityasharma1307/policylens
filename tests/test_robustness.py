@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from civiclens.analysis.robustness import bootstrap_median_margin, rerun_excluding_outliers
+from policylens.analysis.robustness import bootstrap_median_margin, rerun_excluding_outliers
 
 
 def test_bootstrap_median_margin_ci_contains_point_estimate():

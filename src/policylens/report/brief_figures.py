@@ -2,8 +2,8 @@ import json
 
 import matplotlib.pyplot as plt
 
-from civiclens.config import ROOT_DIR
-from civiclens.report.figures import save_figure
+from policylens.config import ROOT_DIR
+from policylens.report.figures import save_figure
 
 RESULTS_PATH = ROOT_DIR / "reports" / "results.json"
 

@@ -6,9 +6,9 @@ from pathlib import Path
 
 import markdown
 
-from civiclens.config import ROOT_DIR
-from civiclens.report.brief_figures import plot_state_extremes
-from civiclens.report.figures import save_figure
+from policylens.config import ROOT_DIR
+from policylens.report.brief_figures import plot_state_extremes
+from policylens.report.figures import save_figure
 
 BRIEF_MD = ROOT_DIR / "brief" / "policy_brief.md"
 BRIEF_HTML = ROOT_DIR / "brief" / "policy_brief.html"
@@ -89,7 +89,7 @@ _WINDOWS_FALLBACKS = [
 
 
 def _find_chrome_binary() -> str:
-    env_override = os.environ.get("CIVICLENS_CHROME_BIN")
+    env_override = os.environ.get("POLICYLENS_CHROME_BIN")
     if env_override and Path(env_override).exists():
         return env_override
 
@@ -103,7 +103,7 @@ def _find_chrome_binary() -> str:
             return candidate
 
     raise FileNotFoundError(
-        "No Chrome/Chromium binary found. Set CIVICLENS_CHROME_BIN to its path."
+        "No Chrome/Chromium binary found. Set POLICYLENS_CHROME_BIN to its path."
     )
 
 

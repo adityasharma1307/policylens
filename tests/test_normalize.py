@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from civiclens.transform.normalize import normalize_price_units, pivot_to_wide
+from policylens.transform.normalize import normalize_price_units, pivot_to_wide
 
 
 @pytest.fixture

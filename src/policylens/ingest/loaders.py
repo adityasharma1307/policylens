@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from civiclens.ingest.sources import SOURCES, Source
+from policylens.ingest.sources import SOURCES, Source
 
 
 def sha256_of_file(path: Path) -> str:

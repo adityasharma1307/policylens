@@ -1,7 +1,7 @@
 import json
 
-import civiclens.report.brief_figures as brief_figures
-from civiclens.report.brief_figures import plot_state_extremes
+import policylens.report.brief_figures as brief_figures
+from policylens.report.brief_figures import plot_state_extremes
 
 
 def test_plot_state_extremes_selects_top_and_bottom_n(tmp_path, monkeypatch):

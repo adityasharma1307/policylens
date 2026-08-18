@@ -1,4 +1,4 @@
-app = "civiclens-dashboard"
+app = "policylens-dashboard"
 primary_region = "bom"
 
 [build]

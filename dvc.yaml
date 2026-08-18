@@ -1,19 +1,19 @@
 stages:
   ingest:
-    cmd: python -m civiclens.ingest.run
+    cmd: python -m policylens.ingest.run
     deps:
-      - src/civiclens/ingest
-      - src/civiclens/validate/schemas.py
+      - src/policylens/ingest
+      - src/policylens/validate/schemas.py
       - data/raw
     outs:
       - data/interim/raw_prices.parquet
       - data/interim/ingest_manifest.json
 
   clean:
-    cmd: python -m civiclens.transform.run
+    cmd: python -m policylens.transform.run
     deps:
-      - src/civiclens/transform
-      - src/civiclens/validate/schemas.py
+      - src/policylens/transform
+      - src/policylens/validate/schemas.py
       - data/interim/raw_prices.parquet
     outs:
       - data/interim/clean_prices_long.parquet
@@ -21,17 +21,17 @@ stages:
       - data/interim/data_quality_report.json
 
   warehouse:
-    cmd: python -m civiclens.warehouse.run
+    cmd: python -m policylens.warehouse.run
     deps:
-      - src/civiclens/warehouse
+      - src/policylens/warehouse
       - data/processed/prices_wide.parquet
     outs:
-      - data/processed/civiclens.duckdb
+      - data/processed/policylens.duckdb
 
   analysis:
-    cmd: python -m civiclens.analysis.run
+    cmd: python -m policylens.analysis.run
     deps:
-      - src/civiclens/analysis
+      - src/policylens/analysis
       - data/processed/prices_wide.parquet
       - data/interim/clean_prices_long.parquet
     outs:
@@ -45,9 +45,9 @@ stages:
           cache: false
 
   brief:
-    cmd: python -m civiclens.report.render_brief
+    cmd: python -m policylens.report.render_brief
     deps:
-      - src/civiclens/report
+      - src/policylens/report
       - brief/policy_brief.md
       - reports/results.json
     outs:

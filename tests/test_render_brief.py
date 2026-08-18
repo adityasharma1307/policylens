@@ -1,4 +1,4 @@
-from civiclens.report.render_brief import _split_front_matter
+from policylens.report.render_brief import _split_front_matter
 
 
 def test_split_front_matter_extracts_title_and_subtitle():

@@ -5,7 +5,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 
-from civiclens.config import ROOT_DIR
+from policylens.config import ROOT_DIR
 
 FIGURES_DIR = ROOT_DIR / "reports" / "figures"
 

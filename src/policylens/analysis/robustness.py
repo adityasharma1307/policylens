@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from civiclens.transform.normalize import pivot_to_wide
+from policylens.transform.normalize import pivot_to_wide
 
 
 def bootstrap_median_margin(df: pd.DataFrame, n_boot: int = 500, seed: int = 42) -> dict:

@@ -1,7 +1,7 @@
 import duckdb
 import pandas as pd
 
-from civiclens.config import DUCKDB_PATH, PROCESSED_DIR
+from policylens.config import DUCKDB_PATH, PROCESSED_DIR
 
 
 def get_connection() -> duckdb.DuckDBPyConnection:

@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from civiclens.transform.clean import clean, flag_price_outliers
+from policylens.transform.clean import clean, flag_price_outliers
 
 
 @pytest.fixture

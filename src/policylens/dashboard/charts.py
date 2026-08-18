@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.graph_objects as go
 
-from civiclens.dashboard.theme import (
+from policylens.dashboard.theme import (
     BASELINE,
     CATEGORICAL,
     FONT_FAMILY,

@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from civiclens.analysis.hypothesis import (
+from policylens.analysis.hypothesis import (
     check_normality,
     check_variance_homogeneity,
     cross_state_convergence,

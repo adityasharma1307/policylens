@@ -1,4 +1,4 @@
-from civiclens.analysis.power import (
+from policylens.analysis.power import (
     achieved_power,
     eta_squared_to_cohens_f,
     minimum_detectable_effect,

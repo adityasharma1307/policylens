@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 
-from civiclens.config import RAW_DIR
+from policylens.config import RAW_DIR
 
 
 @dataclass(frozen=True)

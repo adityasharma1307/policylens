@@ -1,6 +1,6 @@
-from civiclens.config import DUCKDB_PATH
-from civiclens.lineage.emit import emit_job
-from civiclens.warehouse.duck import build_warehouse, query
+from policylens.config import DUCKDB_PATH
+from policylens.lineage.emit import emit_job
+from policylens.warehouse.duck import build_warehouse, query
 
 
 def main() -> None:

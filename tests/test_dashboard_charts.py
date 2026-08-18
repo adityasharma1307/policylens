@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from civiclens.dashboard.charts import (
+from policylens.dashboard.charts import (
     DIVERGING_NEGATIVE,
     DIVERGING_POSITIVE,
     convergence_line,

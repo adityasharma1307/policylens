@@ -1,4 +1,4 @@
-# PROBLEM.md — CivicLens v1
+# PROBLEM.md — PolicyLens v1
 
 ## Dataset
 **India Price Monitoring Division (PMD) essential commodity prices** — daily retail and wholesale prices by state and market, published by the Dept. of Consumer Affairs (sourced via AGMARKNET) and republished as clean per-commodity panels by Factly's Dataful platform (`dataful.in`).

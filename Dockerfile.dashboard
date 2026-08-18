@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -e .
 
 COPY dashboard ./dashboard
 COPY .streamlit ./.streamlit
-COPY data/processed/civiclens.duckdb ./data/processed/civiclens.duckdb
+COPY data/processed/policylens.duckdb ./data/processed/policylens.duckdb
 COPY reports ./reports
 
 EXPOSE 8080

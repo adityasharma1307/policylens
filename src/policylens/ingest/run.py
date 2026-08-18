@@ -2,11 +2,11 @@ import json
 
 import pandas as pd
 
-from civiclens.config import INTERIM_DIR
-from civiclens.ingest.loaders import load_source
-from civiclens.ingest.sources import SOURCES
-from civiclens.lineage.emit import emit_job
-from civiclens.validate.schemas import validate_raw_prices
+from policylens.config import INTERIM_DIR
+from policylens.ingest.loaders import load_source
+from policylens.ingest.sources import SOURCES
+from policylens.lineage.emit import emit_job
+from policylens.validate.schemas import validate_raw_prices
 
 _RAW_CSV_COLUMNS = {
     "date": "str",

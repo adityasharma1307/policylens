@@ -2,7 +2,7 @@ import duckdb
 import pandas as pd
 import pytest
 
-from civiclens.warehouse.duck import build_warehouse, query
+from policylens.warehouse.duck import build_warehouse, query
 
 
 @pytest.fixture
@@ -22,7 +22,7 @@ def wide_parquet(tmp_path, monkeypatch):
     path = processed_dir / "prices_wide.parquet"
     df.to_parquet(path, index=False)
 
-    import civiclens.warehouse.duck as duck_module
+    import policylens.warehouse.duck as duck_module
 
     monkeypatch.setattr(duck_module, "PROCESSED_DIR", processed_dir)
     return path

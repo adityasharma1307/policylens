@@ -1,7 +1,7 @@
 import pandera.pandas as pa
 from pandera.pandas import Check, Column, DataFrameSchema
 
-from civiclens.ingest.sources import SOURCES
+from policylens.ingest.sources import SOURCES
 
 _VALID_DATASET_IDS = {s.dataset_id for s in SOURCES}
 

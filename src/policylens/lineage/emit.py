@@ -15,9 +15,9 @@ from openlineage.client.event_v2 import (
 from openlineage.client.facet_v2 import schema_dataset
 from openlineage.client.transport.file import FileConfig, FileTransport
 
-from civiclens.config import INTERIM_DIR
+from policylens.config import INTERIM_DIR
 
-NAMESPACE = "civiclens"
+NAMESPACE = "policylens"
 LINEAGE_LOG_PATH = INTERIM_DIR / "lineage_events.jsonl"
 
 
@@ -60,7 +60,7 @@ def emit_job(
             RunEvent(
                 eventType=state,
                 eventTime=now,
-                producer="civiclens",
+                producer="policylens",
                 run=run,
                 job=job,
                 inputs=input_datasets,

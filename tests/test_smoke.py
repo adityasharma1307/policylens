@@ -1,4 +1,4 @@
-from civiclens.config import DATA_DIR, INTERIM_DIR, PROCESSED_DIR, RAW_DIR
+from policylens.config import DATA_DIR, INTERIM_DIR, PROCESSED_DIR, RAW_DIR
 
 
 def test_data_dirs_are_nested_under_data_dir() -> None:

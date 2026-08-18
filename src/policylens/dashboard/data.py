@@ -4,8 +4,8 @@ from datetime import date
 import pandas as pd
 import streamlit as st
 
-from civiclens.config import DUCKDB_PATH, ROOT_DIR
-from civiclens.warehouse.duck import get_connection
+from policylens.config import DUCKDB_PATH, ROOT_DIR
+from policylens.warehouse.duck import get_connection
 
 RESULTS_PATH = ROOT_DIR / "reports" / "results.json"
 

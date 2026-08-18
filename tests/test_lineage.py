@@ -1,6 +1,6 @@
 import json
 
-from civiclens.lineage.graph import _collapse_raw_inputs, build_mermaid, load_jobs
+from policylens.lineage.graph import _collapse_raw_inputs, build_mermaid, load_jobs
 
 
 def test_collapse_raw_inputs_groups_zips():
@@ -47,7 +47,7 @@ def test_load_jobs_reads_only_complete_events(tmp_path, monkeypatch):
     }
     log_path.write_text(json.dumps(start_event) + "\n" + json.dumps(complete_event) + "\n")
 
-    import civiclens.lineage.graph as graph_module
+    import policylens.lineage.graph as graph_module
 
     monkeypatch.setattr(graph_module, "LINEAGE_LOG_PATH", log_path)
     jobs = load_jobs()

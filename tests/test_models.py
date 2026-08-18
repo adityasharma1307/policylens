@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from civiclens.analysis.models import compute_state_vif, fit_confounder_model, state_effects_table
+from policylens.analysis.models import compute_state_vif, fit_confounder_model, state_effects_table
 
 
 @pytest.fixture

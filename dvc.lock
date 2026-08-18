@@ -1,22 +1,22 @@
 schema: '2.0'
 stages:
   ingest:
-    cmd: python -m civiclens.ingest.run
+    cmd: python -m policylens.ingest.run
     deps:
     - path: data/raw
       hash: md5
       md5: 84c4a0c57499e23d8437aa387277437b.dir
       size: 22824824
       nfiles: 18
-    - path: src/civiclens/ingest
+    - path: src/policylens/ingest
       hash: md5
-      md5: 9632e68c8bf486347e37ace93d87df51.dir
-      size: 12865
+      md5: 7c8493b113317947548e4aff99108a17.dir
+      size: 12882
       nfiles: 8
-    - path: src/civiclens/validate/schemas.py
+    - path: src/policylens/validate/schemas.py
       hash: md5
-      md5: ce10ec6475b5c62391089f2adbc79680
-      size: 2776
+      md5: e14592b2516444920f00e0ef1a82fe2f
+      size: 2777
     outs:
     - path: data/interim/ingest_manifest.json
       hash: md5
@@ -24,29 +24,29 @@ stages:
       size: 3064
     - path: data/interim/raw_prices.parquet
       hash: md5
-      md5: 780cede692b66e53acb7856a6e57a6e4
-      size: 15456397
+      md5: 486c84cfdf1bef511df54d7678da1d8c
+      size: 15456401
   clean:
-    cmd: python -m civiclens.transform.run
+    cmd: python -m policylens.transform.run
     deps:
     - path: data/interim/raw_prices.parquet
       hash: md5
-      md5: 780cede692b66e53acb7856a6e57a6e4
-      size: 15456397
-    - path: src/civiclens/transform
+      md5: 486c84cfdf1bef511df54d7678da1d8c
+      size: 15456401
+    - path: src/policylens/transform
       hash: md5
-      md5: 42ee37706b3a4ea93698135c29da2371.dir
-      size: 18691
+      md5: e6f7f385c92f77f1771d77ce5ee539de.dir
+      size: 18704
       nfiles: 10
-    - path: src/civiclens/validate/schemas.py
+    - path: src/policylens/validate/schemas.py
       hash: md5
-      md5: ce10ec6475b5c62391089f2adbc79680
-      size: 2776
+      md5: e14592b2516444920f00e0ef1a82fe2f
+      size: 2777
     outs:
     - path: data/interim/clean_prices_long.parquet
       hash: md5
-      md5: 79ee6782731b32fdadbfeaebb9bb0c89
-      size: 25023818
+      md5: ad68f2c5f6cb14ecd2a0be58cbf11d21
+      size: 25023822
     - path: data/interim/data_quality_report.json
       hash: md5
       md5: 2bcce49c1771d467920947d37d36c080
@@ -56,37 +56,37 @@ stages:
       md5: 15e6726002b1a4e662311a4559502634
       size: 19009518
   warehouse:
-    cmd: python -m civiclens.warehouse.run
+    cmd: python -m policylens.warehouse.run
     deps:
     - path: data/processed/prices_wide.parquet
       hash: md5
       md5: 15e6726002b1a4e662311a4559502634
       size: 19009518
-    - path: src/civiclens/warehouse
+    - path: src/policylens/warehouse
       hash: md5
-      md5: ca3035770a12973710dbaef1a2e9b4e8.dir
-      size: 8885
+      md5: 728783af0ef07e35a0adaf24439b7bf5.dir
+      size: 8895
       nfiles: 6
     outs:
-    - path: data/processed/civiclens.duckdb
+    - path: data/processed/policylens.duckdb
       hash: md5
-      md5: 77eb3996ff752e2226be72563108b5ae
+      md5: c20272dc19324cccdde82ef17cc8c922
       size: 35926016
   analysis:
-    cmd: python -m civiclens.analysis.run
+    cmd: python -m policylens.analysis.run
     deps:
     - path: data/interim/clean_prices_long.parquet
       hash: md5
-      md5: 79ee6782731b32fdadbfeaebb9bb0c89
-      size: 25023818
+      md5: ad68f2c5f6cb14ecd2a0be58cbf11d21
+      size: 25023822
     - path: data/processed/prices_wide.parquet
       hash: md5
       md5: 15e6726002b1a4e662311a4559502634
       size: 19009518
-    - path: src/civiclens/analysis
+    - path: src/policylens/analysis
       hash: md5
-      md5: 722f5a50da1e563ccf565efeff1b2691.dir
-      size: 50659
+      md5: 24ba6db735d51fc801454f49b523bacb.dir
+      size: 50678
       nfiles: 14
     outs:
     - path: reports/figures/margin_by_commodity.png
@@ -106,7 +106,7 @@ stages:
       md5: b5e580dc24f8b35009d40d5a37e3e588
       size: 41366
   brief:
-    cmd: python -m civiclens.report.render_brief
+    cmd: python -m policylens.report.render_brief
     deps:
     - path: brief/policy_brief.md
       hash: md5
@@ -116,10 +116,10 @@ stages:
       hash: md5
       md5: b5e580dc24f8b35009d40d5a37e3e588
       size: 41366
-    - path: src/civiclens/report
+    - path: src/policylens/report
       hash: md5
-      md5: 2139879a98acc11702e2f08bd29f2172.dir
-      size: 15817
+      md5: de0ec6bc0aeebb1df1d0324ba0bc1ba3.dir
+      size: 15836
       nfiles: 8
     outs:
     - path: brief/policy_brief.html
@@ -128,5 +128,5 @@ stages:
       size: 7327
     - path: brief/policy_brief.pdf
       hash: md5
-      md5: 604d968c20757a0a4d79356934aedaae
+      md5: b886f32295b92e8584976efb3d98dc11
       size: 126794

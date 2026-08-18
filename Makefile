@@ -3,25 +3,25 @@
 all: ingest clean warehouse analysis brief
 
 ingest:
-	python -m civiclens.ingest.run
+	python -m policylens.ingest.run
 
 clean:
-	python -m civiclens.transform.run
+	python -m policylens.transform.run
 
 warehouse:
-	python -m civiclens.warehouse.run
+	python -m policylens.warehouse.run
 
 lineage:
-	python -m civiclens.lineage.graph
+	python -m policylens.lineage.graph
 
 analysis:
-	python -m civiclens.analysis.run
+	python -m policylens.analysis.run
 
 dashboard:
 	streamlit run dashboard/app.py
 
 brief:
-	python -m civiclens.report.render_brief
+	python -m policylens.report.render_brief
 
 lint:
 	ruff check .

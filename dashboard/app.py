@@ -1,3 +1,3 @@
-from civiclens.dashboard.page import render
+from policylens.dashboard.page import render
 
 render()

@@ -2,7 +2,7 @@ import pandas as pd
 import pandera.errors
 import pytest
 
-from civiclens.validate.schemas import validate_raw_prices
+from policylens.validate.schemas import validate_raw_prices
 
 VALID_ROW = {
     "date": "01-01-2020",

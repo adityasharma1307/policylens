@@ -2,8 +2,8 @@ import json
 
 import pandas as pd
 
-from civiclens.analysis.eda import run_eda
-from civiclens.analysis.hypothesis import (
+from policylens.analysis.eda import run_eda
+from policylens.analysis.hypothesis import (
     check_normality,
     check_variance_homogeneity,
     cross_state_convergence,
@@ -11,10 +11,10 @@ from civiclens.analysis.hypothesis import (
     kruskal_wallis_by_commodity,
     posthoc_pairwise_states,
 )
-from civiclens.analysis.models import compute_state_vif, fit_confounder_model, state_effects_table
-from civiclens.analysis.power import achieved_power, minimum_detectable_effect
-from civiclens.analysis.robustness import bootstrap_median_margin, rerun_excluding_outliers
-from civiclens.config import INTERIM_DIR, PROCESSED_DIR, ROOT_DIR
+from policylens.analysis.models import compute_state_vif, fit_confounder_model, state_effects_table
+from policylens.analysis.power import achieved_power, minimum_detectable_effect
+from policylens.analysis.robustness import bootstrap_median_margin, rerun_excluding_outliers
+from policylens.config import INTERIM_DIR, PROCESSED_DIR, ROOT_DIR
 
 RESULTS_PATH = ROOT_DIR / "reports" / "results.json"
 
