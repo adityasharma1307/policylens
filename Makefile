@@ -1,4 +1,4 @@
-.PHONY: ingest clean warehouse lineage analysis dashboard lint typecheck test
+.PHONY: ingest clean warehouse lineage analysis dashboard brief lint typecheck test
 
 ingest:
 	python -m civiclens.ingest.run
@@ -17,6 +17,9 @@ analysis:
 
 dashboard:
 	streamlit run dashboard/app.py
+
+brief:
+	python -m civiclens.report.render_brief
 
 lint:
 	ruff check .

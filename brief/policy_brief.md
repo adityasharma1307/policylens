@@ -1,0 +1,97 @@
+---
+title: "Retail Markups on Essential Commodities Vary Sharply by State"
+subtitle: "A statistical analysis of 2.05 million state-commodity-day observations, 2014-2026"
+---
+
+## The problem
+
+When wholesale prices rise, retail prices don't always rise with them — and by how
+much they diverge differs by where you live. If the gap between what a shopkeeper
+pays a wholesaler and what a consumer pays at the till is systematically larger in
+some states than others, that is either a sign of local market inefficiency, or of
+consumers in those states quietly absorbing a larger middleman margin. Either way,
+it is a question regulators can act on — but only if the disparity is real and not
+noise.
+
+## What we did
+
+We combined daily retail and wholesale prices for 17 essential commodities (onion,
+wheat, rice, sugar, milk, pulses, edible oils, tea, salt) across all 35 Indian
+states and union territories, 2014–2026, published by the Dept. of Consumer
+Affairs. For each state-commodity-day we computed the retail markup over wholesale
+price, then asked whether that markup differs by state — first with a
+distribution-free test per commodity (Kruskal-Wallis, since markups are
+right-skewed, not normally distributed), then with a regression that adjusts for
+which commodity and which month it is, so the comparison isn't just picking up
+commodity mix or seasonal effects. Every step — cleaning, the primary test, the
+regression, and two robustness checks — runs from a single seeded script; nothing
+here comes from a one-off notebook calculation.
+
+## What we found
+
+**The markup differs by state in every one of the 17 commodities tested**, even
+after adjusting for which commodity and which month it is (Kruskal-Wallis per
+commodity, Benjamini-Hochberg corrected across all 17 tests — none survive by
+chance). The size of the effect varies by commodity, from smallest (wheat) to
+largest (iodised salt), but the direction is consistent: **which state you're in
+predicts your markup, on top of what you're buying and when.**
+
+The regression puts a number on it. Holding commodity and month fixed, **Delhi's
+markup runs about 18.8 percentage points higher than Ladakh's** (95% CI for each
+state's estimate is within ±0.15 points — the gap itself is not a coincidence of
+a small sample). Delhi, Goa, Jammu & Kashmir, Maharashtra, and Arunachal Pradesh
+have the five highest adjusted markups; Ladakh, Puducherry, Himachal Pradesh,
+Odisha, and Gujarat have the five lowest. This regression explains 35.9% of the
+variation in markups overall (R²=0.359) — state, commodity, and month together
+are real, substantial predictors, not the whole story.
+
+**In plain language:** across all 2.05 million observations, the typical
+(median) Indian consumer pays a **9.3% markup** over the wholesale price for
+these commodities (95% bootstrap CI: 9.29%–9.31%). That's the baseline. State of
+residence alone shifts a consumer up or down that baseline by amounts large
+enough to matter for a household budget — nearly 19 percentage points between
+the highest- and lowest-markup states, for the same commodity in the same month.
+
+*(Exploratory, not part of the pre-registered test above:) onion prices are
+**4.5× more volatile** day-to-day than other commodities — consistent with onion
+being the commodity most frequently subject to export bans and stock-limit
+interventions, though this analysis cannot say whether the volatility causes the
+intervention or the reverse.*
+
+## Recommendation
+
+State consumer-affairs departments in the five highest-markup states — starting
+with Delhi, where the adjusted gap is largest and the sample (n>4,000 days for
+onion alone) is not in doubt — should investigate retail supply-chain structure
+for the commodities driving their state's premium, rather than treating "retail
+prices are higher here" as an unavoidable fact of local logistics. This dataset
+identifies *where* to look; it does not by itself identify *why*, which is exactly
+where an audit or a follow-up study should start.
+
+## Limitations
+
+- **Correlational, not causal.** This analysis identifies *that* markups differ by
+  state, not *why*. Transport cost, spoilage/perishability, local demand
+  elasticity, and retail market concentration are all plausible drivers and none
+  are in this dataset — state could be standing in for any of them.
+- **State-level, not sub-state.** The underlying data reports one retail and one
+  wholesale price per state per day, not per city or market — a state average can
+  mask large within-state variation (a state capital vs. a rural district, for
+  instance).
+- **Real missingness, not imputed.** ~5.8% of state-commodity-days are missing a
+  price in the underlying data (some states/commodities more than others — up to
+  ~21% for edible oils in a few states); these are excluded from the relevant
+  test, not filled in, so the smallest states/commodities carry less statistical
+  weight by construction.
+- **External validity.** This is an India-specific finding, using India-specific
+  market structures and a India-specific state-boundary history (state
+  definitions changed mid-panel: J&K split into J&K + Ladakh in 2019, Dadra &
+  Nagar Haveli merged with Daman & Diu in 2020) — it should not be assumed to
+  generalize to other countries' retail-wholesale systems.
+- **The onion-volatility finding is exploratory**, pre-registered as secondary in
+  the project's analysis plan specifically so it would not be presented with the
+  same confidence as the primary state-effect finding above.
+
+*Every number in this brief is reproducible from `reports/results.json`, generated
+by `make analysis` against the pipeline in this repository. Full methodology,
+data provenance, and code: see `PROBLEM.md` and `data/README.md`.*

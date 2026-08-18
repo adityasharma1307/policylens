@@ -21,6 +21,7 @@ dependencies = [
     "matplotlib>=3.9",
     "plotly>=5.24",
     "streamlit>=1.38",
+    "markdown>=3.7",
     "requests>=2.32",
     "openlineage-python>=1.20",
 ]
