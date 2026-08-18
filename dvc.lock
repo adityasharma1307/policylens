@@ -1,0 +1,132 @@
+schema: '2.0'
+stages:
+  ingest:
+    cmd: python -m civiclens.ingest.run
+    deps:
+    - path: data/raw
+      hash: md5
+      md5: 84c4a0c57499e23d8437aa387277437b.dir
+      size: 22824824
+      nfiles: 18
+    - path: src/civiclens/ingest
+      hash: md5
+      md5: 9632e68c8bf486347e37ace93d87df51.dir
+      size: 12865
+      nfiles: 8
+    - path: src/civiclens/validate/schemas.py
+      hash: md5
+      md5: ce10ec6475b5c62391089f2adbc79680
+      size: 2776
+    outs:
+    - path: data/interim/ingest_manifest.json
+      hash: md5
+      md5: f95cea21be8199d60d509cbc67e827b7
+      size: 3064
+    - path: data/interim/raw_prices.parquet
+      hash: md5
+      md5: 780cede692b66e53acb7856a6e57a6e4
+      size: 15456397
+  clean:
+    cmd: python -m civiclens.transform.run
+    deps:
+    - path: data/interim/raw_prices.parquet
+      hash: md5
+      md5: 780cede692b66e53acb7856a6e57a6e4
+      size: 15456397
+    - path: src/civiclens/transform
+      hash: md5
+      md5: 42ee37706b3a4ea93698135c29da2371.dir
+      size: 18691
+      nfiles: 10
+    - path: src/civiclens/validate/schemas.py
+      hash: md5
+      md5: ce10ec6475b5c62391089f2adbc79680
+      size: 2776
+    outs:
+    - path: data/interim/clean_prices_long.parquet
+      hash: md5
+      md5: 79ee6782731b32fdadbfeaebb9bb0c89
+      size: 25023818
+    - path: data/interim/data_quality_report.json
+      hash: md5
+      md5: 2bcce49c1771d467920947d37d36c080
+      size: 10235
+    - path: data/processed/prices_wide.parquet
+      hash: md5
+      md5: 15e6726002b1a4e662311a4559502634
+      size: 19009518
+  warehouse:
+    cmd: python -m civiclens.warehouse.run
+    deps:
+    - path: data/processed/prices_wide.parquet
+      hash: md5
+      md5: 15e6726002b1a4e662311a4559502634
+      size: 19009518
+    - path: src/civiclens/warehouse
+      hash: md5
+      md5: ca3035770a12973710dbaef1a2e9b4e8.dir
+      size: 8885
+      nfiles: 6
+    outs:
+    - path: data/processed/civiclens.duckdb
+      hash: md5
+      md5: 77eb3996ff752e2226be72563108b5ae
+      size: 35926016
+  analysis:
+    cmd: python -m civiclens.analysis.run
+    deps:
+    - path: data/interim/clean_prices_long.parquet
+      hash: md5
+      md5: 79ee6782731b32fdadbfeaebb9bb0c89
+      size: 25023818
+    - path: data/processed/prices_wide.parquet
+      hash: md5
+      md5: 15e6726002b1a4e662311a4559502634
+      size: 19009518
+    - path: src/civiclens/analysis
+      hash: md5
+      md5: 722f5a50da1e563ccf565efeff1b2691.dir
+      size: 50659
+      nfiles: 14
+    outs:
+    - path: reports/figures/margin_by_commodity.png
+      hash: md5
+      md5: 8d2ab35f5d8706126051026e2565096a
+      size: 70322
+    - path: reports/figures/margin_by_state.png
+      hash: md5
+      md5: b47b76afad6ba7b3ce00f04a997a0ccb
+      size: 113888
+    - path: reports/figures/retail_vs_wholesale.png
+      hash: md5
+      md5: 397d781f11c5f3f0cfe4a0c2903c534a
+      size: 108838
+    - path: reports/results.json
+      hash: md5
+      md5: b5e580dc24f8b35009d40d5a37e3e588
+      size: 41366
+  brief:
+    cmd: python -m civiclens.report.render_brief
+    deps:
+    - path: brief/policy_brief.md
+      hash: md5
+      md5: c03d1b741779c0f089fb7af3dfd1d882
+      size: 5785
+    - path: reports/results.json
+      hash: md5
+      md5: b5e580dc24f8b35009d40d5a37e3e588
+      size: 41366
+    - path: src/civiclens/report
+      hash: md5
+      md5: 2139879a98acc11702e2f08bd29f2172.dir
+      size: 15817
+      nfiles: 8
+    outs:
+    - path: brief/policy_brief.html
+      hash: md5
+      md5: 4ba66590085b7a7061da938cc076cd80
+      size: 7327
+    - path: brief/policy_brief.pdf
+      hash: md5
+      md5: 604d968c20757a0a4d79356934aedaae
+      size: 126794

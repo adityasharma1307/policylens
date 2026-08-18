@@ -1,4 +1,6 @@
-.PHONY: ingest clean warehouse lineage analysis dashboard brief lint typecheck test
+.PHONY: all ingest clean warehouse lineage analysis dashboard brief lint typecheck test
+
+all: ingest clean warehouse analysis brief
 
 ingest:
 	python -m civiclens.ingest.run

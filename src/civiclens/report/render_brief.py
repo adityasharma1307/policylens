@@ -1,3 +1,4 @@
+import os
 import re
 import shutil
 import subprocess
@@ -81,15 +82,34 @@ def render_html() -> Path:
     return BRIEF_HTML
 
 
+_WINDOWS_FALLBACKS = [
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe",
+]
+
+
+def _find_chrome_binary() -> str:
+    env_override = os.environ.get("CIVICLENS_CHROME_BIN")
+    if env_override and Path(env_override).exists():
+        return env_override
+
+    for name in ("chromium", "chromium-browser", "google-chrome", "chrome"):
+        found = shutil.which(name)
+        if found:
+            return found
+
+    for candidate in _WINDOWS_FALLBACKS:
+        if Path(candidate).exists():
+            return candidate
+
+    raise FileNotFoundError(
+        "No Chrome/Chromium binary found. Set CIVICLENS_CHROME_BIN to its path."
+    )
+
+
 def render_pdf() -> Path:
     html_path = render_html()
-    chrome = (
-        shutil.which("chrome")
-        or shutil.which("google-chrome")
-        or r"C:\Program Files\Google\Chrome\Application\chrome.exe"
-    )
-    if not Path(chrome).exists():
-        chrome = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"
+    chrome = _find_chrome_binary()
     subprocess.run(
         [
             chrome,

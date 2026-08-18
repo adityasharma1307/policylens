@@ -1,0 +1,57 @@
+stages:
+  ingest:
+    cmd: python -m civiclens.ingest.run
+    deps:
+      - src/civiclens/ingest
+      - src/civiclens/validate/schemas.py
+      - data/raw
+    outs:
+      - data/interim/raw_prices.parquet
+      - data/interim/ingest_manifest.json
+
+  clean:
+    cmd: python -m civiclens.transform.run
+    deps:
+      - src/civiclens/transform
+      - src/civiclens/validate/schemas.py
+      - data/interim/raw_prices.parquet
+    outs:
+      - data/interim/clean_prices_long.parquet
+      - data/processed/prices_wide.parquet
+      - data/interim/data_quality_report.json
+
+  warehouse:
+    cmd: python -m civiclens.warehouse.run
+    deps:
+      - src/civiclens/warehouse
+      - data/processed/prices_wide.parquet
+    outs:
+      - data/processed/civiclens.duckdb
+
+  analysis:
+    cmd: python -m civiclens.analysis.run
+    deps:
+      - src/civiclens/analysis
+      - data/processed/prices_wide.parquet
+      - data/interim/clean_prices_long.parquet
+    outs:
+      - reports/results.json:
+          cache: false
+      - reports/figures/margin_by_state.png:
+          cache: false
+      - reports/figures/margin_by_commodity.png:
+          cache: false
+      - reports/figures/retail_vs_wholesale.png:
+          cache: false
+
+  brief:
+    cmd: python -m civiclens.report.render_brief
+    deps:
+      - src/civiclens/report
+      - brief/policy_brief.md
+      - reports/results.json
+    outs:
+      - brief/policy_brief.pdf:
+          cache: false
+      - brief/policy_brief.html:
+          cache: false
