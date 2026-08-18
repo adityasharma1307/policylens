@@ -18,6 +18,7 @@ in all 17 commodities tested** (Kruskal-Wallis, Benjamini-Hochberg corrected),
 even after adjusting for commodity and month. Delhi's adjusted markup runs about
 **18.8 percentage points higher than Ladakh's**.
 
+🔗 Live dashboard: **[policylens.fly.dev](https://policylens.fly.dev/)**
 📄 Full brief: [`brief/policy_brief.pdf`](brief/policy_brief.pdf)
 📊 Full results: [`RESULTS.md`](RESULTS.md)
 📐 Methodology & pre-registration: [`PROBLEM.md`](PROBLEM.md)
