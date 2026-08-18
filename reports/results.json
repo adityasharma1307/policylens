@@ -1,0 +1,1494 @@
+{
+  "eda": {
+    "n_rows_with_margin": 1966287,
+    "retail_wholesale_correlation": 0.9944812839550534,
+    "overall_margin_mean": 0.12309842937555099,
+    "overall_margin_median": 0.09301346872480641,
+    "state_summary": [
+      {
+        "state": "Goa",
+        "count": 38016,
+        "mean": 0.21870819801295163,
+        "median": 0.16666666666666666,
+        "std": 0.19771367272451165
+      },
+      {
+        "state": "Jammu and Kashmir",
+        "count": 57574,
+        "mean": 0.17720715987351102,
+        "median": 0.14583333333333334,
+        "std": 0.1230949353542558
+      },
+      {
+        "state": "Delhi",
+        "count": 64491,
+        "mean": 0.23750045118952098,
+        "median": 0.1375387797311271,
+        "std": 0.33461744869144916
+      },
+      {
+        "state": "Arunachal Pradesh",
+        "count": 32413,
+        "mean": 0.15983197672211916,
+        "median": 0.12906488034350988,
+        "std": 0.13087580078541833
+      },
+      {
+        "state": "Maharashtra",
+        "count": 73618,
+        "mean": 0.17253356729059763,
+        "median": 0.12880487470146534,
+        "std": 0.19227221193051122
+      },
+      {
+        "state": "Mizoram",
+        "count": 33498,
+        "mean": 0.12471551500092941,
+        "median": 0.10964770625270005,
+        "std": 0.12667494923405342
+      },
+      {
+        "state": "Meghalaya",
+        "count": 59216,
+        "mean": 0.12317675188210399,
+        "median": 0.10526315789473684,
+        "std": 0.08787416562501238
+      },
+      {
+        "state": "Uttarakhand",
+        "count": 62590,
+        "mean": 0.13341741369012616,
+        "median": 0.10457516339869281,
+        "std": 0.10125340565802787
+      },
+      {
+        "state": "Punjab",
+        "count": 72166,
+        "mean": 0.1348269099792026,
+        "median": 0.104224090086042,
+        "std": 0.09849949729083174
+      },
+      {
+        "state": "Manipur",
+        "count": 21010,
+        "mean": 0.14491648018882097,
+        "median": 0.1,
+        "std": 0.18247350021757916
+      },
+      {
+        "state": "Uttar Pradesh",
+        "count": 65781,
+        "mean": 0.11757204566249914,
+        "median": 0.09919185380414389,
+        "std": 0.07263772752502178
+      },
+      {
+        "state": "Chhattisgarh",
+        "count": 71464,
+        "mean": 0.11679063904110346,
+        "median": 0.09795274278654681,
+        "std": 0.08683839807349726
+      },
+      {
+        "state": "Karnataka",
+        "count": 62255,
+        "mean": 0.13081037393630754,
+        "median": 0.09635957716982646,
+        "std": 0.11700595070288386
+      },
+      {
+        "state": "Nagaland",
+        "count": 43487,
+        "mean": 0.11914605395517026,
+        "median": 0.09562115531612848,
+        "std": 0.08538410680114823
+      },
+      {
+        "state": "Rajasthan",
+        "count": 67383,
+        "mean": 0.12436032260545386,
+        "median": 0.0952322286559074,
+        "std": 0.13017857688204337
+      },
+      {
+        "state": "Kerala",
+        "count": 54872,
+        "mean": 0.1291288616229134,
+        "median": 0.09184370262603866,
+        "std": 0.11175379405987397
+      },
+      {
+        "state": "West Bengal",
+        "count": 73226,
+        "mean": 0.11247744536668454,
+        "median": 0.09090909090909091,
+        "std": 0.09100415996363126
+      },
+      {
+        "state": "Assam",
+        "count": 56959,
+        "mean": 0.1409852471448498,
+        "median": 0.09090909090909091,
+        "std": 0.14201513199687316
+      },
+      {
+        "state": "Jharkhand",
+        "count": 58626,
+        "mean": 0.10935703838604917,
+        "median": 0.09090909090909091,
+        "std": 0.076308398054612
+      },
+      {
+        "state": "Andaman and Nicobar Islands",
+        "count": 41297,
+        "mean": 0.10645735573661393,
+        "median": 0.09027169149868536,
+        "std": 0.07729538873577683
+      },
+      {
+        "state": "Tripura",
+        "count": 45662,
+        "mean": 0.11785574652978799,
+        "median": 0.08754863813229571,
+        "std": 0.09632446666260823
+      },
+      {
+        "state": "Tamil Nadu",
+        "count": 63707,
+        "mean": 0.10971940654404705,
+        "median": 0.08707218200478502,
+        "std": 0.09536332869965919
+      },
+      {
+        "state": "Bihar",
+        "count": 66835,
+        "mean": 0.10414723680556212,
+        "median": 0.08551381597289874,
+        "std": 0.06711071913748304
+      },
+      {
+        "state": "Madhya Pradesh",
+        "count": 74568,
+        "mean": 0.1053379752307841,
+        "median": 0.08457883877802605,
+        "std": 0.07233353357252885
+      },
+      {
+        "state": "Haryana",
+        "count": 72150,
+        "mean": 0.10065728610194757,
+        "median": 0.08333333333333333,
+        "std": 0.06857385879629199
+      },
+      {
+        "state": "Chandigarh",
+        "count": 64716,
+        "mean": 0.1102330285314026,
+        "median": 0.08108108108108103,
+        "std": 0.11372938121368482
+      },
+      {
+        "state": "Dadra and Nagar Haveli and Daman and Diu",
+        "count": 22795,
+        "mean": 0.09661877490630724,
+        "median": 0.07931980755812812,
+        "std": 0.07698585593861725
+      },
+      {
+        "state": "Andhra Pradesh",
+        "count": 72884,
+        "mean": 0.11863380761783959,
+        "median": 0.07698107687067085,
+        "std": 0.13024395520132626
+      },
+      {
+        "state": "Telangana",
+        "count": 72068,
+        "mean": 0.09370666066190003,
+        "median": 0.07407407407407407,
+        "std": 0.07225624823794144
+      },
+      {
+        "state": "Odisha",
+        "count": 66738,
+        "mean": 0.09165466947649634,
+        "median": 0.07364341085271318,
+        "std": 0.06747668087450477
+      },
+      {
+        "state": "Sikkim",
+        "count": 35756,
+        "mean": 0.1011423833021978,
+        "median": 0.0726256983240224,
+        "std": 0.09617514726176146
+      },
+      {
+        "state": "Gujarat",
+        "count": 70049,
+        "mean": 0.09129310789616664,
+        "median": 0.06983964673341808,
+        "std": 0.08938340919855035
+      },
+      {
+        "state": "Puducherry",
+        "count": 54567,
+        "mean": 0.08157696084526926,
+        "median": 0.06666666666666667,
+        "std": 0.07392525691558997
+      },
+      {
+        "state": "Himachal Pradesh",
+        "count": 68001,
+        "mean": 0.08407955712093014,
+        "median": 0.06612163729768546,
+        "std": 0.06653975370772697
+      },
+      {
+        "state": "Ladakh",
+        "count": 5849,
+        "mean": 0.05244483671799589,
+        "median": 0.041666666666666664,
+        "std": 0.0675056016311127
+      }
+    ],
+    "commodity_summary": [
+      {
+        "commodity": "Onion",
+        "count": 123898,
+        "mean": 0.32966743386557645,
+        "median": 0.2615588804096036,
+        "std": 0.2839045871718034
+      },
+      {
+        "commodity": "Salt Pack Iodised",
+        "count": 123009,
+        "mean": 0.23229060668056908,
+        "median": 0.17647058823529413,
+        "std": 0.18233069550167863
+      },
+      {
+        "commodity": "Atta Wheat",
+        "count": 124436,
+        "mean": 0.15298120983992256,
+        "median": 0.13192559740517645,
+        "std": 0.08976076756063463
+      },
+      {
+        "commodity": "Wheat",
+        "count": 111931,
+        "mean": 0.12850349661589502,
+        "median": 0.11975535168195726,
+        "std": 0.05703375595022937
+      },
+      {
+        "commodity": "Rice",
+        "count": 124674,
+        "mean": 0.1339946408777077,
+        "median": 0.11764705882352941,
+        "std": 0.07564817194428045
+      },
+      {
+        "commodity": "Tea Loose",
+        "count": 111054,
+        "mean": 0.11946148547806149,
+        "median": 0.10889374413620388,
+        "std": 0.0782840041504483
+      },
+      {
+        "commodity": "Masoor Dal",
+        "count": 124071,
+        "mean": 0.11843504744040692,
+        "median": 0.09859632363137716,
+        "std": 0.0781385667876673
+      },
+      {
+        "commodity": "Moong Dal",
+        "count": 123908,
+        "mean": 0.10469246147026594,
+        "median": 0.08914100486223663,
+        "std": 0.06649659621019594
+      },
+      {
+        "commodity": "Tur Arhar Dal",
+        "count": 122007,
+        "mean": 0.10059588253303452,
+        "median": 0.08333333333333333,
+        "std": 0.0730919100156355
+      },
+      {
+        "commodity": "Sugar",
+        "count": 124281,
+        "mean": 0.08909092913102311,
+        "median": 0.08047690014903139,
+        "std": 0.043919208995742566
+      },
+      {
+        "commodity": "Vanaspati Packed",
+        "count": 120744,
+        "mean": 0.09597906978073571,
+        "median": 0.07622182831096475,
+        "std": 0.07963061966814923
+      },
+      {
+        "commodity": "Milk",
+        "count": 98667,
+        "mean": 0.07716035431937658,
+        "median": 0.06875,
+        "std": 0.06633958184381354
+      },
+      {
+        "commodity": "Soya Oil Packed",
+        "count": 103383,
+        "mean": 0.07900783208535868,
+        "median": 0.06578947368421052,
+        "std": 0.05845876048513182
+      },
+      {
+        "commodity": "Palm Oil Packed",
+        "count": 101034,
+        "mean": 0.07781590053571281,
+        "median": 0.0636971355670439,
+        "std": 0.07062761650304013
+      },
+      {
+        "commodity": "Mustard Oil Packed",
+        "count": 117575,
+        "mean": 0.07278285429121593,
+        "median": 0.06282722513089005,
+        "std": 0.046798983322597756
+      },
+      {
+        "commodity": "Sunflower Oil Packed",
+        "count": 113289,
+        "mean": 0.06941526501605509,
+        "median": 0.05763395084144548,
+        "std": 0.05900560463814338
+      },
+      {
+        "commodity": "Groundnut Oil Packed",
+        "count": 98326,
+        "mean": 0.06681575827739189,
+        "median": 0.05555555555555555,
+        "std": 0.05310259960184849
+      }
+    ]
+  },
+  "assumption_checks": {
+    "normality": {
+      "shapiro_stat": 0.6901211164232499,
+      "shapiro_p": 3.806820088342667e-70,
+      "shapiro_n": 5000,
+      "skewness": 5.745512766949269,
+      "kurtosis": 62.11017709893052,
+      "normal_at_alpha_0.05": false
+    },
+    "variance_homogeneity_by_state": {
+      "group_col": "state",
+      "levene_stat": 2730.2578594883526,
+      "levene_p": 0.0,
+      "equal_variance_at_alpha_0.05": false
+    }
+  },
+  "primary_hypothesis": {
+    "test": "Kruskal-Wallis per commodity, states as groups",
+    "multiple_comparison_correction": "Benjamini-Hochberg (FDR) across the 17 commodities",
+    "results": [
+      {
+        "commodity": "Salt Pack Iodised",
+        "H_statistic": 62866.99166610142,
+        "p_value": 0.0,
+        "n": 123009,
+        "k_states": 35,
+        "epsilon_squared": 0.5109453353237385,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00020977458072542378
+      },
+      {
+        "commodity": "Moong Dal",
+        "H_statistic": 50695.74807232503,
+        "p_value": 0.0,
+        "n": 123908,
+        "k_states": 35,
+        "epsilon_squared": 0.4089813605250945,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00020825260421383828
+      },
+      {
+        "commodity": "Milk",
+        "H_statistic": 35707.56459379904,
+        "p_value": 0.0,
+        "n": 98667,
+        "k_states": 33,
+        "epsilon_squared": 0.3616964190218286,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.0002552530195721888
+      },
+      {
+        "commodity": "Masoor Dal",
+        "H_statistic": 44003.5382625027,
+        "p_value": 0.0,
+        "n": 124071,
+        "k_states": 35,
+        "epsilon_squared": 0.35449013401353396,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00020797901276875582
+      },
+      {
+        "commodity": "Sugar",
+        "H_statistic": 43976.70692605835,
+        "p_value": 0.0,
+        "n": 124281,
+        "k_states": 35,
+        "epsilon_squared": 0.3536750231480961,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00020762759086473756
+      },
+      {
+        "commodity": "Vanaspati Packed",
+        "H_statistic": 42533.60452329362,
+        "p_value": 0.0,
+        "n": 120744,
+        "k_states": 35,
+        "epsilon_squared": 0.3520831464372468,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00021370962945623743
+      },
+      {
+        "commodity": "Groundnut Oil Packed",
+        "H_statistic": 34181.23332465446,
+        "p_value": 0.0,
+        "n": 98326,
+        "k_states": 32,
+        "epsilon_squared": 0.3474294801783879,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.0002529150220993172
+      },
+      {
+        "commodity": "Onion",
+        "H_statistic": 42476.258157493234,
+        "p_value": 0.0,
+        "n": 123898,
+        "k_states": 35,
+        "epsilon_squared": 0.3426548538102035,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.0002082694124015009
+      },
+      {
+        "commodity": "Sunflower Oil Packed",
+        "H_statistic": 38698.884976738314,
+        "p_value": 0.0,
+        "n": 113289,
+        "k_states": 34,
+        "epsilon_squared": 0.34140554480365826,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00022506173569523797
+      },
+      {
+        "commodity": "Tur Arhar Dal",
+        "H_statistic": 40974.62555477629,
+        "p_value": 0.0,
+        "n": 122007,
+        "k_states": 35,
+        "epsilon_squared": 0.3356559337780498,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00021149736340447817
+      },
+      {
+        "commodity": "Mustard Oil Packed",
+        "H_statistic": 38277.29186433118,
+        "p_value": 0.0,
+        "n": 117575,
+        "k_states": 35,
+        "epsilon_squared": 0.3253640621433655,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.0002194696734971938
+      },
+      {
+        "commodity": "Rice",
+        "H_statistic": 39020.730205140055,
+        "p_value": 0.0,
+        "n": 124674,
+        "k_states": 35,
+        "epsilon_squared": 0.31279719995458927,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00020697311068700985
+      },
+      {
+        "commodity": "Tea Loose",
+        "H_statistic": 31394.006073269746,
+        "p_value": 0.0,
+        "n": 111054,
+        "k_states": 34,
+        "epsilon_squared": 0.2824806888242636,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00022959110748568118
+      },
+      {
+        "commodity": "Palm Oil Packed",
+        "H_statistic": 28308.154152331525,
+        "p_value": 0.0,
+        "n": 101034,
+        "k_states": 33,
+        "epsilon_squared": 0.2799591504275356,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00024927313722977756
+      },
+      {
+        "commodity": "Atta Wheat",
+        "H_statistic": 30800.758033292754,
+        "p_value": 0.0,
+        "n": 124436,
+        "k_states": 35,
+        "epsilon_squared": 0.2473192179588006,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00020736896885240606
+      },
+      {
+        "commodity": "Soya Oil Packed",
+        "H_statistic": 21694.64462532758,
+        "p_value": 0.0,
+        "n": 103383,
+        "k_states": 34,
+        "epsilon_squared": 0.2095970413388381,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.0002466264308141463
+      },
+      {
+        "commodity": "Wheat",
+        "H_statistic": 21294.12833794171,
+        "p_value": 0.0,
+        "n": 111931,
+        "k_states": 33,
+        "epsilon_squared": 0.19001347957909623,
+        "p_value_bh": 0.0,
+        "significant_bh": true,
+        "achieved_power": 1.0,
+        "mde_eta_squared": 0.00022500569759061767
+      }
+    ],
+    "n_significant_after_bh": 17
+  },
+  "posthoc_top_commodities": [
+    "Salt Pack Iodised",
+    "Moong Dal",
+    "Milk"
+  ],
+  "confounder_model": {
+    "formula": "margin_pct ~ C(state) + C(commodity) + C(year_month)",
+    "r_squared": 0.359383745411443,
+    "n_obs": 1966287,
+    "condition_number": 206.64031133403034,
+    "state_effects": [
+      {
+        "state": "Delhi",
+        "coef_vs_reference": 0.1304191604396289,
+        "ci_low": 0.12917894333052676,
+        "ci_high": 0.13165937754873103,
+        "p_value": 0.0
+      },
+      {
+        "state": "Goa",
+        "coef_vs_reference": 0.10638629147132694,
+        "ci_low": 0.10498769469000636,
+        "ci_high": 0.10778488825264752,
+        "p_value": 0.0
+      },
+      {
+        "state": "Jammu and Kashmir",
+        "coef_vs_reference": 0.0730159405398577,
+        "ci_low": 0.07174752226148796,
+        "ci_high": 0.07428435881822744,
+        "p_value": 0.0
+      },
+      {
+        "state": "Maharashtra",
+        "coef_vs_reference": 0.0708967075571718,
+        "ci_low": 0.06968686254992947,
+        "ci_high": 0.07210655256441413,
+        "p_value": 0.0
+      },
+      {
+        "state": "Arunachal Pradesh",
+        "coef_vs_reference": 0.054768952007868604,
+        "ci_low": 0.053307412342205415,
+        "ci_high": 0.05623049167353179,
+        "p_value": 0.0
+      },
+      {
+        "state": "Manipur",
+        "coef_vs_reference": 0.03830491507440841,
+        "ci_low": 0.03663562853401921,
+        "ci_high": 0.039974201614797616,
+        "p_value": 0.0
+      },
+      {
+        "state": "Punjab",
+        "coef_vs_reference": 0.032645644736298884,
+        "ci_low": 0.031431604835944524,
+        "ci_high": 0.033859684636653245,
+        "p_value": 0.0
+      },
+      {
+        "state": "Assam",
+        "coef_vs_reference": 0.032422977080922157,
+        "ci_low": 0.03115135668196477,
+        "ci_high": 0.033694597479879546,
+        "p_value": 0.0
+      },
+      {
+        "state": "Uttarakhand",
+        "coef_vs_reference": 0.029460760507396776,
+        "ci_low": 0.028212820772688926,
+        "ci_high": 0.030708700242104627,
+        "p_value": 0.0
+      },
+      {
+        "state": "Karnataka",
+        "coef_vs_reference": 0.028832387558681696,
+        "ci_low": 0.027584290066607075,
+        "ci_high": 0.030080485050756316,
+        "p_value": 0.0
+      },
+      {
+        "state": "Kerala",
+        "coef_vs_reference": 0.025767461136702977,
+        "ci_low": 0.024486034824966644,
+        "ci_high": 0.02704888744843931,
+        "p_value": 0.0
+      },
+      {
+        "state": "Rajasthan",
+        "coef_vs_reference": 0.021746214633523803,
+        "ci_low": 0.020516448269065235,
+        "ci_high": 0.02297598099798237,
+        "p_value": 4.001071223034997e-263
+      },
+      {
+        "state": "Meghalaya",
+        "coef_vs_reference": 0.0186531391669092,
+        "ci_low": 0.017392664447571104,
+        "ci_high": 0.019913613886247298,
+        "p_value": 6.309137274607143e-185
+      },
+      {
+        "state": "Mizoram",
+        "coef_vs_reference": 0.01857268864015758,
+        "ci_low": 0.017124822319377876,
+        "ci_high": 0.020020554960937284,
+        "p_value": 1.8327265832439277e-139
+      },
+      {
+        "state": "Andhra Pradesh",
+        "coef_vs_reference": 0.016317430086128692,
+        "ci_low": 0.01510566471770834,
+        "ci_high": 0.01752919545454904,
+        "p_value": 1.7742159181811878e-153
+      },
+      {
+        "state": "Chhattisgarh",
+        "coef_vs_reference": 0.01493961427946475,
+        "ci_low": 0.013723502071619216,
+        "ci_high": 0.016155726487310285,
+        "p_value": 4.474354002825116e-128
+      },
+      {
+        "state": "Uttar Pradesh",
+        "coef_vs_reference": 0.014876415125797203,
+        "ci_low": 0.013641436850771873,
+        "ci_high": 0.016111393400822533,
+        "p_value": 3.200935750062605e-123
+      },
+      {
+        "state": "Nagaland",
+        "coef_vs_reference": 0.014781016987267932,
+        "ci_low": 0.013430116314642653,
+        "ci_high": 0.016131917659893212,
+        "p_value": 5.2060720475934835e-102
+      },
+      {
+        "state": "West Bengal",
+        "coef_vs_reference": 0.010467818932507224,
+        "ci_low": 0.009256879610211544,
+        "ci_high": 0.011678758254802905,
+        "p_value": 2.2026592063922775e-64
+      },
+      {
+        "state": "Chandigarh",
+        "coef_vs_reference": 0.007624857278041678,
+        "ci_low": 0.006386045008258633,
+        "ci_high": 0.008863669547824722,
+        "p_value": 1.650150929730712e-33
+      },
+      {
+        "state": "Tripura",
+        "coef_vs_reference": 0.006745445471111724,
+        "ci_low": 0.005409849673380374,
+        "ci_high": 0.008081041268843075,
+        "p_value": 4.2169015033165886e-23
+      },
+      {
+        "state": "Jharkhand",
+        "coef_vs_reference": 0.005645144414910727,
+        "ci_low": 0.00438157413960033,
+        "ci_high": 0.006908714690221124,
+        "p_value": 2.017970053393781e-18
+      },
+      {
+        "state": "Madhya Pradesh",
+        "coef_vs_reference": 0.0036734287851442502,
+        "ci_low": 0.0024663579298097823,
+        "ci_high": 0.004880499640478719,
+        "p_value": 2.4515413093928604e-09
+      },
+      {
+        "state": "Tamil Nadu",
+        "coef_vs_reference": 0.0025265842117649,
+        "ci_low": 0.0012842728863267623,
+        "ci_high": 0.0037688955372030377,
+        "p_value": 6.716153981083906e-05
+      },
+      {
+        "state": "Bihar",
+        "coef_vs_reference": 0.00021894934568121637,
+        "ci_low": -0.0010120733879787577,
+        "ci_high": 0.0014499720793411906,
+        "p_value": 0.7273905365383935
+      },
+      {
+        "state": "Haryana",
+        "coef_vs_reference": -0.0014799377899172002,
+        "ci_low": -0.002694083706432998,
+        "ci_high": -0.00026579187340140266,
+        "p_value": 0.016893185689705912
+      },
+      {
+        "state": "Dadra and Nagar Haveli and Daman and Diu",
+        "coef_vs_reference": -0.0023157692923618483,
+        "ci_low": -0.0039455538214554055,
+        "ci_high": -0.0006859847632682914,
+        "p_value": 0.005354066561656478
+      },
+      {
+        "state": "Telangana",
+        "coef_vs_reference": -0.00800091453926711,
+        "ci_low": -0.009215351801602868,
+        "ci_high": -0.006786477276931352,
+        "p_value": 3.836620995780334e-38
+      },
+      {
+        "state": "Sikkim",
+        "coef_vs_reference": -0.009787111730514159,
+        "ci_low": -0.011208459536001029,
+        "ci_high": -0.00836576392502729,
+        "p_value": 1.6598208948948155e-41
+      },
+      {
+        "state": "Gujarat",
+        "coef_vs_reference": -0.01170388537603127,
+        "ci_low": -0.01292465072594524,
+        "ci_high": -0.010483120026117298,
+        "p_value": 9.118744608578781e-79
+      },
+      {
+        "state": "Odisha",
+        "coef_vs_reference": -0.013438323547067145,
+        "ci_low": -0.014669605281583682,
+        "ci_high": -0.012207041812550608,
+        "p_value": 1.6557481556159388e-101
+      },
+      {
+        "state": "Himachal Pradesh",
+        "coef_vs_reference": -0.018792548267074945,
+        "ci_low": -0.020019852667985408,
+        "ci_high": -0.01756524386616448,
+        "p_value": 7.799236528140473e-198
+      },
+      {
+        "state": "Puducherry",
+        "coef_vs_reference": -0.024738824548413526,
+        "ci_low": -0.026023292119972508,
+        "ci_high": -0.023454356976854544,
+        "p_value": 0.0
+      },
+      {
+        "state": "Ladakh",
+        "coef_vs_reference": -0.058000011180137444,
+        "ci_low": -0.060761686298253556,
+        "ci_high": -0.05523833606202133,
+        "p_value": 0.0
+      }
+    ],
+    "state_vif_summary": {
+      "min": 1.1471914973518684,
+      "max": 2.769332755473298,
+      "mean": 2.330623117809887
+    }
+  },
+  "secondary_hypotheses": {
+    "cross_state_convergence_onion": [
+      {
+        "year_month": "2014-01",
+        "cv_across_states": 0.3993157255161564
+      },
+      {
+        "year_month": "2014-02",
+        "cv_across_states": 0.39445448478683537
+      },
+      {
+        "year_month": "2014-03",
+        "cv_across_states": 0.2806361399786269
+      },
+      {
+        "year_month": "2014-04",
+        "cv_across_states": 0.29501050401545553
+      },
+      {
+        "year_month": "2014-05",
+        "cv_across_states": 0.2764066819292921
+      },
+      {
+        "year_month": "2014-06",
+        "cv_across_states": 0.2833700543545889
+      },
+      {
+        "year_month": "2014-07",
+        "cv_across_states": 0.21084060907623553
+      },
+      {
+        "year_month": "2014-08",
+        "cv_across_states": 0.20182507145493206
+      },
+      {
+        "year_month": "2014-09",
+        "cv_across_states": 0.20574337419397223
+      },
+      {
+        "year_month": "2014-10",
+        "cv_across_states": 0.22357117164981036
+      },
+      {
+        "year_month": "2014-11",
+        "cv_across_states": 0.2774261151365425
+      },
+      {
+        "year_month": "2014-12",
+        "cv_across_states": 0.25086265202199687
+      },
+      {
+        "year_month": "2015-01",
+        "cv_across_states": 0.2718502861015404
+      },
+      {
+        "year_month": "2015-02",
+        "cv_across_states": 0.25156801045382743
+      },
+      {
+        "year_month": "2015-03",
+        "cv_across_states": 0.2312033430249607
+      },
+      {
+        "year_month": "2015-04",
+        "cv_across_states": 0.2507183521619782
+      },
+      {
+        "year_month": "2015-05",
+        "cv_across_states": 0.29157776302712746
+      },
+      {
+        "year_month": "2015-06",
+        "cv_across_states": 0.2638163705434086
+      },
+      {
+        "year_month": "2015-07",
+        "cv_across_states": 0.2705240346477565
+      },
+      {
+        "year_month": "2015-08",
+        "cv_across_states": 0.16229872843545434
+      },
+      {
+        "year_month": "2015-09",
+        "cv_across_states": 0.20729881959120305
+      },
+      {
+        "year_month": "2015-10",
+        "cv_across_states": 0.2057232775643359
+      },
+      {
+        "year_month": "2015-11",
+        "cv_across_states": 0.24197640802273637
+      },
+      {
+        "year_month": "2015-12",
+        "cv_across_states": 0.36692976228429036
+      },
+      {
+        "year_month": "2016-01",
+        "cv_across_states": 0.6723934986776388
+      },
+      {
+        "year_month": "2016-02",
+        "cv_across_states": 0.31416296723385484
+      },
+      {
+        "year_month": "2016-03",
+        "cv_across_states": 0.3589779586387384
+      },
+      {
+        "year_month": "2016-04",
+        "cv_across_states": 0.38652084932562764
+      },
+      {
+        "year_month": "2016-05",
+        "cv_across_states": 0.4261657610218769
+      },
+      {
+        "year_month": "2016-06",
+        "cv_across_states": 0.4052300698751917
+      },
+      {
+        "year_month": "2016-07",
+        "cv_across_states": 0.3662917720660496
+      },
+      {
+        "year_month": "2016-08",
+        "cv_across_states": 0.38128310117342135
+      },
+      {
+        "year_month": "2016-09",
+        "cv_across_states": 0.4462658003147211
+      },
+      {
+        "year_month": "2016-10",
+        "cv_across_states": 0.5503860419158461
+      },
+      {
+        "year_month": "2016-11",
+        "cv_across_states": 0.5254814244523685
+      },
+      {
+        "year_month": "2016-12",
+        "cv_across_states": 0.37335088400076666
+      },
+      {
+        "year_month": "2017-01",
+        "cv_across_states": 0.38886589446813924
+      },
+      {
+        "year_month": "2017-02",
+        "cv_across_states": 0.4149155329898983
+      },
+      {
+        "year_month": "2017-03",
+        "cv_across_states": 0.3941865191923166
+      },
+      {
+        "year_month": "2017-04",
+        "cv_across_states": 0.37736469736043
+      },
+      {
+        "year_month": "2017-05",
+        "cv_across_states": 0.35910835111068884
+      },
+      {
+        "year_month": "2017-06",
+        "cv_across_states": 0.3854182998026005
+      },
+      {
+        "year_month": "2017-07",
+        "cv_across_states": 0.5040975305363271
+      },
+      {
+        "year_month": "2017-08",
+        "cv_across_states": 0.2505300161394602
+      },
+      {
+        "year_month": "2017-09",
+        "cv_across_states": 0.31488919204093346
+      },
+      {
+        "year_month": "2017-10",
+        "cv_across_states": 0.27145017501361535
+      },
+      {
+        "year_month": "2017-11",
+        "cv_across_states": 0.2242264918687961
+      },
+      {
+        "year_month": "2017-12",
+        "cv_across_states": 0.22471270598045098
+      },
+      {
+        "year_month": "2018-01",
+        "cv_across_states": 0.17904738681745852
+      },
+      {
+        "year_month": "2018-02",
+        "cv_across_states": 0.2722480732495322
+      },
+      {
+        "year_month": "2018-03",
+        "cv_across_states": 0.48313979490497533
+      },
+      {
+        "year_month": "2018-04",
+        "cv_across_states": 0.5845207175922472
+      },
+      {
+        "year_month": "2018-05",
+        "cv_across_states": 0.5383009698881781
+      },
+      {
+        "year_month": "2018-06",
+        "cv_across_states": 0.4230648828299514
+      },
+      {
+        "year_month": "2018-07",
+        "cv_across_states": 0.3290176389117979
+      },
+      {
+        "year_month": "2018-08",
+        "cv_across_states": 0.3362626262767296
+      },
+      {
+        "year_month": "2018-09",
+        "cv_across_states": 0.3778251585619528
+      },
+      {
+        "year_month": "2018-10",
+        "cv_across_states": 0.36681632450514023
+      },
+      {
+        "year_month": "2018-11",
+        "cv_across_states": 0.3208038845892415
+      },
+      {
+        "year_month": "2018-12",
+        "cv_across_states": 0.37705367828748765
+      },
+      {
+        "year_month": "2019-01",
+        "cv_across_states": 0.3283760661473713
+      },
+      {
+        "year_month": "2019-02",
+        "cv_across_states": 0.3584740073846532
+      },
+      {
+        "year_month": "2019-03",
+        "cv_across_states": 0.4341828663092786
+      },
+      {
+        "year_month": "2019-04",
+        "cv_across_states": 0.41288542268255163
+      },
+      {
+        "year_month": "2019-05",
+        "cv_across_states": 0.37175506061459695
+      },
+      {
+        "year_month": "2019-06",
+        "cv_across_states": 0.33880933833599763
+      },
+      {
+        "year_month": "2019-07",
+        "cv_across_states": 0.33366153363155543
+      },
+      {
+        "year_month": "2019-08",
+        "cv_across_states": 0.31743083705099684
+      },
+      {
+        "year_month": "2019-09",
+        "cv_across_states": 0.2523060023731125
+      },
+      {
+        "year_month": "2019-10",
+        "cv_across_states": 0.20915225817158004
+      },
+      {
+        "year_month": "2019-11",
+        "cv_across_states": 0.18160330219813495
+      },
+      {
+        "year_month": "2019-12",
+        "cv_across_states": 0.21514817947134962
+      },
+      {
+        "year_month": "2020-01",
+        "cv_across_states": 0.35310038288908036
+      },
+      {
+        "year_month": "2020-02",
+        "cv_across_states": 0.2827893886006504
+      },
+      {
+        "year_month": "2020-03",
+        "cv_across_states": 0.2567371287963784
+      },
+      {
+        "year_month": "2020-04",
+        "cv_across_states": 0.4095743929866364
+      },
+      {
+        "year_month": "2020-05",
+        "cv_across_states": 0.41914673577653505
+      },
+      {
+        "year_month": "2020-06",
+        "cv_across_states": 0.527331281847651
+      },
+      {
+        "year_month": "2020-07",
+        "cv_across_states": 0.36896325465066204
+      },
+      {
+        "year_month": "2020-08",
+        "cv_across_states": 0.5356258861990477
+      },
+      {
+        "year_month": "2020-09",
+        "cv_across_states": 0.33333925995439206
+      },
+      {
+        "year_month": "2020-10",
+        "cv_across_states": 0.21761637521013452
+      },
+      {
+        "year_month": "2020-11",
+        "cv_across_states": 0.20916575234930096
+      },
+      {
+        "year_month": "2020-12",
+        "cv_across_states": 0.27217104903057693
+      },
+      {
+        "year_month": "2021-01",
+        "cv_across_states": 0.23277778804621194
+      },
+      {
+        "year_month": "2021-02",
+        "cv_across_states": 0.18610883702106615
+      },
+      {
+        "year_month": "2021-03",
+        "cv_across_states": 0.28388810861634695
+      },
+      {
+        "year_month": "2021-04",
+        "cv_across_states": 0.3566708411906534
+      },
+      {
+        "year_month": "2021-05",
+        "cv_across_states": 0.35997127132479034
+      },
+      {
+        "year_month": "2021-06",
+        "cv_across_states": 0.2947742552029705
+      },
+      {
+        "year_month": "2021-07",
+        "cv_across_states": 0.2234131754937157
+      },
+      {
+        "year_month": "2021-08",
+        "cv_across_states": 0.21518699115635237
+      },
+      {
+        "year_month": "2021-09",
+        "cv_across_states": 0.23176171851496916
+      },
+      {
+        "year_month": "2021-10",
+        "cv_across_states": 0.2581480007250704
+      },
+      {
+        "year_month": "2021-11",
+        "cv_across_states": 0.1953095159345833
+      },
+      {
+        "year_month": "2021-12",
+        "cv_across_states": 0.25892299902293353
+      },
+      {
+        "year_month": "2022-01",
+        "cv_across_states": 0.2570775383050993
+      },
+      {
+        "year_month": "2022-02",
+        "cv_across_states": 0.2506683788977726
+      },
+      {
+        "year_month": "2022-03",
+        "cv_across_states": 0.30430727766239934
+      },
+      {
+        "year_month": "2022-04",
+        "cv_across_states": 0.3412441156743007
+      },
+      {
+        "year_month": "2022-05",
+        "cv_across_states": 0.35781843743406405
+      },
+      {
+        "year_month": "2022-06",
+        "cv_across_states": 0.2878007239370173
+      },
+      {
+        "year_month": "2022-07",
+        "cv_across_states": 0.27632606847348423
+      },
+      {
+        "year_month": "2022-08",
+        "cv_across_states": 0.2663059245307318
+      },
+      {
+        "year_month": "2022-09",
+        "cv_across_states": 0.25488260957796727
+      },
+      {
+        "year_month": "2022-10",
+        "cv_across_states": 0.25372176400474733
+      },
+      {
+        "year_month": "2022-11",
+        "cv_across_states": 0.2464748024991252
+      },
+      {
+        "year_month": "2022-12",
+        "cv_across_states": 0.29929601578931925
+      },
+      {
+        "year_month": "2023-01",
+        "cv_across_states": 0.2827835969316517
+      },
+      {
+        "year_month": "2023-02",
+        "cv_across_states": 0.3131848315359187
+      },
+      {
+        "year_month": "2023-03",
+        "cv_across_states": 0.32754791894638413
+      },
+      {
+        "year_month": "2023-04",
+        "cv_across_states": 0.3456199241490234
+      },
+      {
+        "year_month": "2023-05",
+        "cv_across_states": 0.37834111344938465
+      },
+      {
+        "year_month": "2023-06",
+        "cv_across_states": 0.3243712047277534
+      },
+      {
+        "year_month": "2023-07",
+        "cv_across_states": 0.2665901321826956
+      },
+      {
+        "year_month": "2023-08",
+        "cv_across_states": 0.24753448166439923
+      },
+      {
+        "year_month": "2023-09",
+        "cv_across_states": 0.2384224971163166
+      },
+      {
+        "year_month": "2023-10",
+        "cv_across_states": 0.2243323754955062
+      },
+      {
+        "year_month": "2023-11",
+        "cv_across_states": 0.1642521150811686
+      },
+      {
+        "year_month": "2023-12",
+        "cv_across_states": 0.1911985915457997
+      },
+      {
+        "year_month": "2024-01",
+        "cv_across_states": 0.24051843818587837
+      },
+      {
+        "year_month": "2024-02",
+        "cv_across_states": 0.2658406265325971
+      },
+      {
+        "year_month": "2024-03",
+        "cv_across_states": 0.24958919765900367
+      },
+      {
+        "year_month": "2024-04",
+        "cv_across_states": 0.26441862333472577
+      },
+      {
+        "year_month": "2024-05",
+        "cv_across_states": 0.24762073639557633
+      },
+      {
+        "year_month": "2024-06",
+        "cv_across_states": 0.21701257276351013
+      },
+      {
+        "year_month": "2024-07",
+        "cv_across_states": 0.14405344667391334
+      },
+      {
+        "year_month": "2024-08",
+        "cv_across_states": 0.1536887760470234
+      },
+      {
+        "year_month": "2024-09",
+        "cv_across_states": 0.1674502616982166
+      },
+      {
+        "year_month": "2024-10",
+        "cv_across_states": 0.16792422146336253
+      },
+      {
+        "year_month": "2024-11",
+        "cv_across_states": 0.20251744467503685
+      },
+      {
+        "year_month": "2024-12",
+        "cv_across_states": 0.22847309379134917
+      },
+      {
+        "year_month": "2025-01",
+        "cv_across_states": 0.2880762114245687
+      },
+      {
+        "year_month": "2025-02",
+        "cv_across_states": 0.29015663856576296
+      },
+      {
+        "year_month": "2025-03",
+        "cv_across_states": 0.30959418217480233
+      },
+      {
+        "year_month": "2025-04",
+        "cv_across_states": 0.3303720299168091
+      },
+      {
+        "year_month": "2025-05",
+        "cv_across_states": 0.37502947499050565
+      },
+      {
+        "year_month": "2025-06",
+        "cv_across_states": 0.38259641523869986
+      },
+      {
+        "year_month": "2025-07",
+        "cv_across_states": 0.35370729556750635
+      },
+      {
+        "year_month": "2025-08",
+        "cv_across_states": 0.3213887657182042
+      },
+      {
+        "year_month": "2025-09",
+        "cv_across_states": 0.32519107908177425
+      },
+      {
+        "year_month": "2025-10",
+        "cv_across_states": 0.34554762531599276
+      },
+      {
+        "year_month": "2025-11",
+        "cv_across_states": 0.3431014264404112
+      },
+      {
+        "year_month": "2025-12",
+        "cv_across_states": 0.31094099134721676
+      },
+      {
+        "year_month": "2026-01",
+        "cv_across_states": 0.3207544883366722
+      },
+      {
+        "year_month": "2026-02",
+        "cv_across_states": 0.3352701007043743
+      },
+      {
+        "year_month": "2026-03",
+        "cv_across_states": 0.3357661783319685
+      },
+      {
+        "year_month": "2026-04",
+        "cv_across_states": 0.3471775526270294
+      },
+      {
+        "year_month": "2026-05",
+        "cv_across_states": 0.34583716888233307
+      },
+      {
+        "year_month": "2026-06",
+        "cv_across_states": 0.31268559790565614
+      },
+      {
+        "year_month": "2026-07",
+        "cv_across_states": 0.22864846910211553
+      },
+      {
+        "year_month": "2026-08",
+        "cv_across_states": 0.22222081514576347
+      }
+    ],
+    "intervention_volatility": {
+      "intervened_commodities": [
+        "Onion"
+      ],
+      "intervened_variance": 0.005943337771636398,
+      "other_variance": 0.0013239034909258973,
+      "levene_stat": 32748.10599392891,
+      "levene_p": 0.0,
+      "significantly_different_variance_at_alpha_0.05": true
+    }
+  },
+  "robustness": {
+    "bootstrap_median_margin": {
+      "point_estimate": 0.09301346872480641,
+      "ci_low": 0.09289617486338794,
+      "ci_high": 0.0931151961230848,
+      "n_boot": 500,
+      "n": 1966287
+    },
+    "alternative_cleaning_exclude_outliers": {
+      "median_margin_pct": 0.09301278524399695,
+      "delta_vs_main": -6.834808094630107e-07
+    }
+  }
+}
