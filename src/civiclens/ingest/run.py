@@ -5,7 +5,18 @@ import pandas as pd
 from civiclens.config import INTERIM_DIR
 from civiclens.ingest.loaders import load_source
 from civiclens.ingest.sources import SOURCES
+from civiclens.lineage.emit import emit_job
 from civiclens.validate.schemas import validate_raw_prices
+
+_RAW_CSV_COLUMNS = {
+    "date": "str",
+    "state": "str",
+    "market": "str",
+    "commodity": "str",
+    "price": "str",
+    "unit": "str",
+    "note": "str",
+}
 
 
 def main() -> None:
@@ -36,6 +47,16 @@ def main() -> None:
 
     print(f"Ingested {len(validated)} rows from {len(SOURCES)} sources -> {out_path}")
     print(f"Manifest written -> {manifest_path}")
+
+    emit_job(
+        job_name="ingest",
+        inputs={f"data/raw/{s.dataset_id}- Dataful.zip": _RAW_CSV_COLUMNS for s in SOURCES},
+        outputs={
+            "data/interim/raw_prices.parquet": {
+                c: str(t) for c, t in validated.dtypes.items()
+            }
+        },
+    )
 
 
 if __name__ == "__main__":
